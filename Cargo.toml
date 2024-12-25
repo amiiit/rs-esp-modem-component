@@ -10,6 +10,7 @@ name = "modem"
 harness = false # do not use the built in cargo test harness -> resolve rust-analyzer errors
 
 [[package.metadata.esp-idf-sys.extra_components]]
+component_dirs = "esp_modem/componen"
 
 
 
