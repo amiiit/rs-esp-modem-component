@@ -2,3 +2,6 @@
 /.embuild
 /target
 /Cargo.lock
+.idea
+*.iml
+modules.xml
