@@ -10,7 +10,7 @@ name = "modem"
 harness = false # do not use the built in cargo test harness -> resolve rust-analyzer errors
 
 [[package.metadata.esp-idf-sys.extra_components]]
-component_dirs = "esp_modem"
+component_dirs = "./esp_modem"
 bindings_header = "bindings.h"
 bindings_module = "esp_modem"
 
@@ -29,7 +29,7 @@ experimental = ["esp-idf-svc/experimental"]
 [dependencies]
 log = "0.4"
 esp-idf-svc = { version = "0.49", features = ["critical-section", "embassy-time-driver", "embassy-sync"] }
-esp-idf-sys = { version = "0.35.0", features = [] }
+esp-idf-sys = "0.35.0"
 
 [build-dependencies]
 embuild = "0.32.0"
