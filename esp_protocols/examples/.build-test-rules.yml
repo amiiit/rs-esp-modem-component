@@ -1,3 +1,0 @@
-examples/esp_netif/multiple_netifs:
-  disable:
-    - if: IDF_TARGET != "esp32"
